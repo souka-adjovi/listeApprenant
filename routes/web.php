@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('forme', 'ApprenantController@create');
+
+Route::get('form', 'TuteurController@create');
+Route::post('formtuteur', 'TuteurController@store');
