@@ -9,7 +9,7 @@
                 </div>
                 <div>
                 <a href="{{url('forme')}}"><button class="btn btn-primary mb-2">Ajouter</button></a>
-                    <a href=""><button class="btn btn-success mb-2">Liste</button></a>
+                <a href="{{url('listeApp')}}"><button class="btn btn-success mb-2">Liste</button></a>
                 </div>
 
               </div>
@@ -22,7 +22,7 @@
                 </div>
                 <div>
                     <a href="{{url('form')}}"><button class="btn btn-primary mb-2">Ajouter</button></a>
-                    <a href=""><button class="btn btn-success mb-2">Liste</button></a>
+                    <a href="{{url('listeTut')}}"><button class="btn btn-success mb-2">Liste</button></a>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 @extends('layouts/integrer')
     <div class="container">
-    <form class="" action="{{url('formapprenant')}}" method="post" enctype="multipart/form-data">
+    <form class="" action="{{url('Ajout/'.$apprenant->id)}}" method="post" enctype="multipart/form-data">
                @csrf
                <h1 class="text-center">APPRENANT</h1>
                <div class="form-group col-md-11">
@@ -30,7 +30,7 @@
                      </div>
                      <div class="form-group col-md-11">
                         <label for="model">Formation:</label>
-                        <input type="text" name="formation" id="model" class="form-control">
+                        <input type="text" name="formation" value="{{$apprenant->formation}}"  id="model" class="form-control">
                     </div>
                     <div class="form-group col-md-11">
                         <label for="model">Etablissement Précédent:</label>

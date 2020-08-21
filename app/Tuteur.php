@@ -8,6 +8,6 @@ class Tuteur extends Model
 {
     protected $guarded=[];
     public function Apprenant(){
-        return $this->belongsTo(Apprenant::class);
+        return $this->HasMany(Apprenant::class,'id');
     }
 }

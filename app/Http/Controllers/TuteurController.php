@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Tuteur;
+use App\Apprenant;
 
 class TuteurController extends Controller
 {
@@ -13,6 +14,8 @@ class TuteurController extends Controller
     }
 
     public function liste(){
+        $tut= Tuteur::All();
+        return view('tuteur/liste',['tuteur'=>$tut]);
 
     }
 

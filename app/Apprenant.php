@@ -10,7 +10,7 @@ class Apprenant extends Model
    
    public function Tuteur()
    {
-    return $this->hasOne(Tuteur::class);
+    return $this->belongsTo(Tuteur::class,'Tuteur_id','id');
    }
 
 }
